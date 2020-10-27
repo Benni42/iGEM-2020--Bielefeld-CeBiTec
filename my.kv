@@ -1,0 +1,39 @@
+Manager:
+    Home:
+    Graphs:
+    Info:
+
+<Home>
+
+<Graphs>
+
+<Info>
+    FloatLayout:
+        GridLayout:
+            background_color: 1.0, 1.0, 1.0, 1.0
+            rows: 3
+
+            Label:
+                padding_x: 20
+                padding_y: 20
+                markup: True
+                text: "[b][u]About the WavySense project[/u][/b] \n Women all over the world wish to abstain from taking the pill because it causes a lot of side effects. Not taking the pill means the female body is undergoing its natural cycle in which there are fertile and non fertile days. Knowing this cycle a women is able to predict if she can get pregnant or not. The concentration of the sex hormones estradiol, progesterone, LH and FSH proved to be indicators for the respective cycle phase. Therefore a device measuring the concentration of these hormones and evaluating them could give women a potent alternative to artificial hormonal contraception. For measuring low level concentrations high sensitivity methods such as Surface acoustic wave technology (SAW) are needed. SAW is a method by which a wave is generated inside a piezoelectric crystal. In the center of this crystal a gold layer is applied, on which antibodies or their derivatives are immobilized. These antibodies bind the target specifically. The antibody – antigen interaction results in a mass shift inducing a phase shift in the crystal. This phase shift is recognized by the associated electronics and evaluated by this app."
+                text_size: self.size
+                halign: 'justify'
+                valign: 'middle'
+                font_size: '16sp'
+
+            Label:
+                padding_x: 20
+                padding_y: 20
+                markup: True
+                text: "[b][u]About the hormones[/u][/b] \n [b]Estradiol[/b] \n Estradiol is an estrogen steroid hormone and the major female sex hormone. It is involved in the regulation of the estrous and menstrual female reproductive cycles. \n [b]Progesterone[/b] \n Progesterone is an endogenous steroid and progestogen sex hormone involved in the menstrual cycle, pregnancy, and embryogenesis of humans and other species. It belongs to a group of steroid hormones called the progestogens, and is the major progestogen in the body. Progesterone has a variety of important functions in the body.\n [b]LH and FSH[/b] \n In females, an acute rise of LH (Luteinizing hormone) triggers ovulation and development of the corpus luteum. FSH (Follicle-stimulating hormone) regulates the development, growth, pubertal maturation, and reproductive processes of the body. FSH and LH work together in the reproductive system."
+                text_size: self.size
+                halign: 'justify'
+                valign: 'middle'
+                font_size: '16sp'
+
+            Button:
+                size_hint: (1,0.15)
+                text: "Back to graphs"
+                on_press: root.go_to_graphs()
